@@ -6,7 +6,7 @@ import * as postAPI from '../lib/api/write';
 import { takeLatest } from 'redux-saga/effects';
 
 const INITIALIZE = 'write/INITIALIZE';
-const CHANGE_FIELD = 'write/INITIALIZE';
+const CHANGE_FIELD = 'write/CHANGE_FIELD';
 
 const [
   WRITE_POST,
@@ -44,7 +44,7 @@ const initialState = {
 //initialState의 포맷을 참조로 해준다.
 const write = handleActions(
   {
-    [INITIALIZE]: () => initialState,
+    [INITIALIZE]: (state) => initialState,
     [CHANGE_FIELD]: (state, { payload: { key, value } }) => ({
       ...state,
       [key]: value,
