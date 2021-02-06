@@ -6,6 +6,7 @@
   "author": "simyeen <simyeen@naver.com>",
   "license": "MIT",
   "dependencies": {
-    "qs": "^6.9.4"
+    "qs": "^6.9.4",
+    "react-router-dom": "^5.2.0"
   }
 }
