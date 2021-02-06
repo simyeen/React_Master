@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/simyeen/React_Master/static/css/main.2b86a88d.chunk.css",
+    "main.js": "/simyeen/React_Master/static/js/main.6a322f99.chunk.js",
+    "main.js.map": "/simyeen/React_Master/static/js/main.6a322f99.chunk.js.map",
+    "runtime-main.js": "/simyeen/React_Master/static/js/runtime-main.e97057b9.js",
+    "runtime-main.js.map": "/simyeen/React_Master/static/js/runtime-main.e97057b9.js.map",
+    "static/css/2.526167cc.chunk.css": "/simyeen/React_Master/static/css/2.526167cc.chunk.css",
+    "static/js/2.e946d058.chunk.js": "/simyeen/React_Master/static/js/2.e946d058.chunk.js",
+    "static/js/2.e946d058.chunk.js.map": "/simyeen/React_Master/static/js/2.e946d058.chunk.js.map",
+    "static/js/3.b2b92d94.chunk.js": "/simyeen/React_Master/static/js/3.b2b92d94.chunk.js",
+    "static/js/3.b2b92d94.chunk.js.map": "/simyeen/React_Master/static/js/3.b2b92d94.chunk.js.map",
+    "index.html": "/simyeen/React_Master/index.html",
+    "static/css/2.526167cc.chunk.css.map": "/simyeen/React_Master/static/css/2.526167cc.chunk.css.map",
+    "static/css/main.2b86a88d.chunk.css.map": "/simyeen/React_Master/static/css/main.2b86a88d.chunk.css.map",
+    "static/js/2.e946d058.chunk.js.LICENSE.txt": "/simyeen/React_Master/static/js/2.e946d058.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e97057b9.js",
+    "static/css/2.526167cc.chunk.css",
+    "static/js/2.e946d058.chunk.js",
+    "static/css/main.2b86a88d.chunk.css",
+    "static/js/main.6a322f99.chunk.js"
+  ]
+}
