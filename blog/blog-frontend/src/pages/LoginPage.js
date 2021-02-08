@@ -6,6 +6,12 @@ const LoginPage = () => {
   return (
     <AuthTemplate>
       <LoginForm />
+      <LoginForm />
+      <LoginForm />
+      <LoginForm />
+      <LoginForm />
+      <LoginForm />
+      <LoginForm />
     </AuthTemplate>
   );
 };

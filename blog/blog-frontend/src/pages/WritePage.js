@@ -4,15 +4,18 @@ import Lotte from '../components/common/Lotte';
 import EditorContainer from '../containers/write/EditorContainer';
 import TagBoxContainer from '../containers/write/TagBoxContainer';
 import WriteActionButtonsContainer from '../containers/write/WriteActionButtonsContainer';
+import AuthTemplate from '../components/auth/AuthTemplate';
 
 const WritePage = () => {
   return (
-    <Responsive>
-      <EditorContainer />
-      <TagBoxContainer />
-      <WriteActionButtonsContainer />
-      <Lotte />
-    </Responsive>
+    <AuthTemplate>
+      <Responsive>
+        <EditorContainer />
+        <TagBoxContainer />
+        <WriteActionButtonsContainer />
+        <Lotte />
+      </Responsive>
+    </AuthTemplate>
   );
 };
 
