@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
+import WriteActionButtons from '../../components/write/WriteActionButtons';
 import { useDispatch, useSelector } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import WriteActionButtons from '../../components/write/WriteActionButtons';
 import { writePost } from '../../modules/write';
 
 const WriteActionButtonsContainer = ({ history }) => {
@@ -15,7 +15,13 @@ const WriteActionButtonsContainer = ({ history }) => {
   }));
 
   const onPublish = () => {
-    dispahch(writePost({ title, body, tags }));
+    dispahch(
+      writePost({
+        title,
+        body,
+        tags,
+      }),
+    );
   };
 
   const onCancel = () => {
@@ -24,6 +30,7 @@ const WriteActionButtonsContainer = ({ history }) => {
 
   useEffect(() => {
     if (post) {
+      console.log('write', post);
       const { _id, user } = post;
       history.push(`/@${user.username}/${_id}`);
     }

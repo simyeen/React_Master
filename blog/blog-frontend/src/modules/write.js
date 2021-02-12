@@ -56,13 +56,11 @@ const write = handleActions(
     }),
     [WRITE_POST_SUCCESS]: (state, { payload: post }) => ({
       ...state,
-      post: post, //혹은 그냥 post만 적고 postError부분 삭제해도 무관.
-      postError: null,
+      post,
     }),
     [WRITE_POST_FAILURE]: (state, { payload: postError }) => ({
       ...state,
-      post: null,
-      postError: postError,
+      postError,
     }),
   },
   initialState,
