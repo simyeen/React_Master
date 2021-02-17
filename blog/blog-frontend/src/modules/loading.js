@@ -22,7 +22,7 @@ const loading = handleActions(
     }),
     [FINISH_LOADING]: (state, { payload: type }) => ({
       ...state,
-      [type]: true,
+      [type]: false,
     }),
   },
   initialState,
