@@ -6,7 +6,6 @@ const PostPage = () => {
   return (
     <>
       <HeaderContainer />
-      포스트 디테일 페이지야
       <PostViewerContainer />
     </>
   );
