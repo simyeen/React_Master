@@ -60,6 +60,24 @@ const TagListBlock = styled.div`
   margin-top: 0.5rem;
 `;
 
+const TagList = React.memo(({ tags, onRemove }) => (
+  <TagListBlock>
+    {tags.map((tag) => (
+      <TagItem key={tag} tag={tag} onRemove={onRemove} />
+    ))}
+  </TagListBlock>
+));
+
+const TagItem = React.memo(({ tag, onRemove }) => (
+  <Tag
+    onClick={() => {
+      onRemove(tag);
+    }}
+  >
+    #{tag}
+  </Tag>
+));
+
 const TagBox = ({ tags, onChangeTags }) => {
   const [input, setInput] = useState('');
   const [localTags, setLocalTags] = useState([]);
@@ -100,24 +118,6 @@ const TagBox = ({ tags, onChangeTags }) => {
   useEffect(() => {
     setLocalTags(tags);
   }, [tags]);
-
-  const TagList = React.memo(({ tags, onRemove }) => (
-    <TagListBlock>
-      {tags.map((tag) => (
-        <TagItem key={tag} tag={tag} onRemove={onRemove} />
-      ))}
-    </TagListBlock>
-  ));
-
-  const TagItem = React.memo(({ tag, onRemove }) => (
-    <Tag
-      onClick={() => {
-        onRemove(tag);
-      }}
-    >
-      #{tag}
-    </Tag>
-  ));
 
   return (
     <TagBoxBlock>
