@@ -50,6 +50,7 @@ const AskModal = ({
   onConfirm,
   onCancel,
 }) => {
+  if (!visible) return null;
   return (
     <FullScreen>
       <AskModalBlock>
